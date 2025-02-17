@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود کد</title>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-warning">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow" style="width: 80%; max-width: 350px;">
+            <div class="mb-4 d-flex flex-row-reverse justify-content-center align-items-center">
+                <i class="fa-solid fa-arrow-right-to-bracket fa-lg"></i>
+                <h3 class="text-center mx-1">ورود</h3>
+            </div>
+            <form>
+                <div class="mb-3" dir="rtl">
+                    <label for="recievecode" class="form-label">کد دریافتی:</label>
+                    <input type="text" dir="ltr"
+                        class="form-control focus-ring focus-ring-warning border-warning-subtle" id="code"
+                        placeholder="12345" required>
+                </div>
+                <button type="submit" id="verifyCode" class="btn btn-warning w-100 border-0">ورود</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./code_login.js"></script>
+
+</body>
+
+</html>

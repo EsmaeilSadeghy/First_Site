@@ -1,0 +1,480 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../font/Vazir-Black.woff2") format("woff2"),
+    url("../font/Vazir-Black.woff") format("woff"),
+    url("../font/Vazir-Black.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: center;
+  scroll-behavior: smooth;
+  font-family: "MyFont";
+}
+
+.navbar .btn {
+  margin-right: 2vw;
+}
+
+#offcanvasMenu {
+  width: 60%;
+  max-width: 400px;
+  background-color: #ffc107;
+}
+
+.navbar-nav {
+  padding: 0 2vw 0 0;
+}
+
+h3 a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 90px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.header-container a {
+  margin-left: 10px;
+}
+
+.form-inline {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+i {
+  margin-left: 1vw;
+}
+
+#scrollBtn {
+  width: 55px;
+  height: 55px;
+  display: none; /* دکمه در ابتدا پنهان است */
+  position: fixed; /* دکمه در موقعیت ثابت قرار دارد */
+  bottom: 23px; /* فاصله از پایین صفحه */
+  left: 20px; /* فاصله از راست صفحه */
+  z-index: 5; /* مطمئن شوید که دکمه بالاتر از سایر عناصر قرار دارد */
+  border: none;
+  outline: none; /* بدون خط بیرونی */
+  cursor: pointer; /* نشانگر موس به حالت اشاره گر تغییر می کند */
+}
+
+button i {
+  margin: auto;
+  padding: auto;
+}
+
+#searchForm {
+  display: none;
+  max-width: 500px;
+  border: 2px solid #ffda6b;
+  border-radius: 8px;
+}
+
+.close-search {
+  cursor: pointer; /* نشانگر موس به حالت اشاره‌گر تغییر می‌کند */
+  position: absolute; /* موقعیت ثابت */
+  top: 60%; /* وسط input */
+  left: 12vw; /* فاصله از راست input */
+  font-size: 1.3rem; /* اندازه فونت */
+}
+
+#slides {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators button {
+  width: 5px !important;
+  height: 5px !important;
+  border-radius: 50%; /* گرد کردن دکمه */
+  background-color: #555; /* رنگ پس‌زمینه */
+  border: none; /* حذف حاشیه */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #a8a8a8;
+  border-radius: 5px;
+}
+
+.carousel-indicators .active {
+  width: 10px !important;
+  height: 5px !important;
+  border-radius: 45%; /* گرد کردن دکمه */
+  background-color: #ffc107 !important;
+}
+
+.carousel-item {
+  touch-action: pan-y;
+}
+
+.carousel {
+  width: 80%;
+  max-width: 500px;
+  align-content: center;
+  display: inline;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cards {
+  text-align: center;
+  width: 95%;
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+}
+
+.card-body {
+  border-top: 2px solid #e0e0e0;
+}
+
+.product-slider {
+  display: flex;
+  overflow-x: auto; /* فعال کردن اسکرول افقی */
+  padding: 20px;
+  gap: 10px; /* فاصله بین کارت‌ها */
+}
+
+.product-slider::-webkit-scrollbar {
+  width: 0; /* حذف اسکرول بار در مرورگرهای Webkit */
+  height: 5px; /* می‌توانید برای نمایش اسکرول بار ارتفاع دهید */
+}
+
+.product-slider .card {
+  width: 12vw; /* عرض کارت */
+  min-width: 130px;
+  flex: 0 0 auto; /* از شکستن کارت جلوگیری می‌کند */
+}
+
+.product-slider img {
+  object-fit: cover; /* تنظیم تصویر در کارت */
+  height: 140px; /* ارتفاع ثابت برای تصاویر */
+  width: 149px;
+}
+
+#scroll-right,
+#scroll-left {
+  border-radius: 50%;
+}
+
+.category-container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.product-card{
+  max-width: 150px !important;
+}
+
+.category-container .row {
+  margin: 15px 0;
+  padding: 0;
+}
+
+.category-container .col {
+  margin: 0;
+  padding: 0;
+}
+
+.category-container img {
+  width: 110px;
+  height: 90px;
+  border: 2px solid #ffc107;
+  border-radius: 20px;
+}
+
+#benefit {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.benefit p {
+  width: 100px;
+  margin: 0 auto !important;
+}
+
+.benefit img {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid gold;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer .image img {
+  width: 20vw;
+  height: 20vh;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* ********************************************* */
+/* دکمه چت‌بات */
+#open-chat {
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* استایل کلی چت‌بات */
+#chatbot {
+  position: fixed;
+  bottom: -100vh;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  padding: 50px 0 10px 0;
+  transition: bottom 0.5s ease-in-out;
+}
+
+/* دکمه بستن چت‌بات */
+#close-chat {
+  width: 35px;
+  height: 35px;
+  margin-right: 4vw;
+  color: white;
+  border: none;
+  background-color: rgba(50, 50, 50);
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* بخش نمایش پیام‌ها */
+#chatbox {
+  width: 80vw;
+  max-width: 1000px;
+  height: 70vh;
+  border-radius: 8px;
+  resize: none;
+  color: black;
+  padding: 10px;
+  margin: 5px auto 0 auto;
+  direction: rtl;
+  box-sizing: border-box;
+  overflow-y: auto; /* فعال‌سازی اسکرول برای محتوای زیاد */
+  overflow: auto;
+  scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر و اج */
+}
+
+#chatbox::-webkit-scrollbar {
+  display: none; /* برای کروم و سافاری */
+}
+
+/* بخش ورودی پیام */
+.chatbot-input-group {
+  width: 83vw !important;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+/* ورودی پیام */
+#user-input {
+  width: 80%;
+  height: 70px;
+  flex-grow: 1;
+  padding: 10px 20px;
+  border-radius: 20px;
+  direction: rtl;
+  box-shadow: none;
+  resize: none;
+  background-color: rgba(50, 50, 50);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  overflow: auto;
+  scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر و اج */
+}
+
+/* دکمه ارسال پیام */
+#send-btn {
+  width: 50px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgba(50, 50, 50);
+  cursor: pointer;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#train-model-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* ***************************************** */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-right: 15px;
+  transform: rotate(90deg); /* تغییر جهت فلش */
+  transition: transform 0.3s ease; /* افکت چرخش */
+}
+
+/* چرخش فلش هنگام باز شدن دراپ‌داون */
+.dropdown-toggle[aria-expanded="true"]::after {
+  transform: rotate(0deg); /* چرخش 180 درجه */
+}
+
+.product_details_tab .tab-content {
+  border: 1px solid #dee2e6;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: none;
+}
+
+#product-details-tab a {
+  font-weight: bold;
+  color: black;
+}
+/* *********************************************** */
+main .container {
+  margin-top: 110px;
+  width: 95%;
+  max-width: 1000px;
+  height: 100%;
+}
+
+.user-panel {
+  background-color: #ededed;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.user-panel-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-panel img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.user-info p {
+  display: block;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.logout {
+  background: linear-gradient(to left, #ffc517, #ffda6b);
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+
+.logout a {
+  color: #424242;
+}
+
+.logout svg {
+  margin-right: 5px;
+}
+
+.user-menu {
+  overflow-x: auto; /* اضافه کردن اسکرول افقی */
+  white-space: nowrap; /* جلوگیری از شکست خطوط */
+  display: flex; /* برای نمایش آیتم‌ها به صورت خطی */
+  gap: 10px; /* فاصله بین لینک‌ها */
+  padding: 10px 0; /* فضای داخلی بالا و پایین */
+}
+.user-menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #212529;
+  font-size: 14px;
+  min-width: 100px; /* عرض حداقلی */
+  text-align: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.user-menu a:hover,
+.user-menu a.active {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.d-none {
+  display: none;
+}
+
+.section-content {
+  background-color: #ededed;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+}

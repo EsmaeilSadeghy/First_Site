@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "عسل طبیعی",
+        "description": "عسل طبیعی از بهترین زنبورستان‌ها",
+        "images": [
+            "../image/honey.svg",
+            "../image/avishan.png",
+            "../image/gevan.jpg"
+        ],
+        "packaging": [
+            {
+                "weight": "250 گرم",
+                "price": 60000
+            },
+            {
+                "weight": "500 گرم",
+                "price": 110000
+            },
+            {
+                "weight": "1 کیلوگرم",
+                "price": 200000
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "بره‌موم",
+        "description": "بره‌موم طبیعی و مفید برای تقویت ایمنی بدن",
+        "images": [
+            "../image/barehmoom.svg",
+            "../image/barehmoom1.svg",
+            "../image/barehmoom2.svg"
+        ],
+        "packaging": [
+            {
+                "weight": "100 گرم",
+                "price": 75000
+            },
+            {
+                "weight": "200 گرم",
+                "price": 140000
+            }
+        ]
+    }
+]

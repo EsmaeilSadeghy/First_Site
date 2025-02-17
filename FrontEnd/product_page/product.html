@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه محصول</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header fixed-top">
+        <!-- منو -->
+        <div class="navbar bg-warning p-1 mx-auto">
+            <div class="menu-container">
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <i class="fa fa-bars-staggered"></i>
+                </button>
+                <h3><a href="home.html" class="text-dark">عسلدون</a></h3>
+            </div>
+
+            <a href="home.html"><img src="../image/asl.png" alt="عسلدون" title="عسلدون"></a>
+
+            <div class="header-container">
+                <a href="#" id="searchIcon" title="جستجو"><i class="fa fa-search text-dark"></i></a>
+                <a href="#" id="login_or_user??*****"><i class="fa fa-user-alt text-dark" title="صفحه کاربر"></i></a>
+                <a href="#"><i class="fa fa-cart-shopping text-dark" title="سبد خرید"></i></a>
+            </div>
+        </div>
+        <!-- منو کشویی -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="بستن"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html"><i class="fa fa-home"></i>صفحه اصلی</a>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item">
+                        <!-- لینک محصولات با آیکون تغییرپذیر -->
+                        <a class="nav-link products-toggle" data-bs-toggle="collapse" href="#productSubMenu"
+                            aria-expanded="false" aria-controls="productSubMenu">
+                            <i class="fa fa-file"></i> محصولات
+                            <i class="fa fa-angle-left mx-2 toggle-icon"></i>
+                        </a>
+                        <ul class="collapse list-unstyled mx-2 p-0" id="productSubMenu">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>عسل</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>گرده‌گل</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>بره‌موم</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>ژله‌رویال</a></li>
+                            <hr class="my-0 mx-2">
+                        </ul>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-note-sticky"></i>خواندنی‌های
+                            آموزشی</a></li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info-circle"></i>درباره ما</a>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-phone"></i>تماس با ما</a></li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-pen"></i>قوانین و راهنمای سایت</a>
+                    </li>
+                    <hr class="m-1">
+                </ul>
+            </div>
+        </div>
+        <!-- سرچ باکس -->
+        <form class="form-inline my-2" id="searchForm">
+            <!-- <span class="close-search" id="closeSearch">&times;</span> -->
+            <input class="form-control border-0 focus-ring focus-ring-warning" type="search" placeholder="جستجو..."
+                aria-label="جستجو">
+        </form>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- نوار ابزار -->
+            <!-- <div class="row my-1 mx-auto w-75 text-center">
+                <div class="col my-2">
+                    <a href="#" class="text-dark" aria-label="بازگشت"><i
+                            class="fa fa-arrow-right-from-bracket fa-lg"></i></a>
+                </div>
+                <div class="col my-2">
+                    <a href="#" class="text-danger" aria-label="افزودن به علاقه‌مندی‌ها"><i
+                            class="fa fa-heart fa-lg"></i></a>
+                </div>
+                <div class="col my-2">
+                    <a href="#" class="text-primary" aria-label="اشتراک گذاری"><i
+                            class="fa fa-share-nodes fa-lg"></i></a>
+                </div>
+            </div> -->
+            
+            <!-- اسلایدها -->
+            <div class="row align-items-center">
+                <div id="slides" class="col-12 col-md-8 mb-3">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="product-image1" width="300" class="d-block" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="product-image2" width="300" class="d-block" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="product-image3" width="300" class="d-block" alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- خرید -->
+                <div class="col-12 col-md-4 my-4">
+                    <h1 id="product-name" class="mb-4"></h1>
+                    <div class="dropdown d-flex justify-content-center align-items-center gap-3">
+                        <h5>وزن بسته‌بندی:</h5>
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            1 کیلوگرم
+                        </button>
+                        <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">250 گرم</a></li>
+                            <li><a class="dropdown-item" href="#">500 گرم</a></li>
+                            <li><a class="dropdown-item active" href="#">1 کیلوگرم</a></li>
+                        </ul>
+                    </div>
+                    <div id="priceDisplay" class="text-center mt-3">
+                        <strong>قیمت:</strong> <span id="priceValue">60000</span> تومان
+                    </div>
+                </div>
+            </div>
+            <!-- توضیحات محصول -->
+            <div class="row">
+                <div class="product_details_tab my-3">
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="product-details-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#description" role="tab"
+                                aria-selected="true">معرفی محصول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#reviews" role="tab" aria-selected="false">نظرات
+                                <span>(0)</span></a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content p-3">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <div class="description_area text_p font_15">
+                                <p><strong>رده‌بندی:</strong> درجه2</p>
+                                <p>توضیحات</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <div class="submit_a_review_area mt-1">
+                                <div class="alert alert-warning font_14">
+                                    برای ثبت نظر، لازم است ابتدا وارد حساب کاربری خود شوید.
+                                    <a href="#">ورود به حساب کاربری</a>
+                                </div>
+                            </div>
+                            <ul class="list-unstyled mt-4">
+                                <!-- Comments will be populated here -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- مزایای سایت -->
+            <div class="benefit bg-secondary-subtle my-5 mx-auto py-1 px-1" id="benefit">
+                <div class="row my-4 g-0">
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/send.png" alt="ارسال رایگان">
+                        <p class="m-0">ارسال رایگان</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/quality.png" alt="تضمین کیفیت">
+                        <p class="m-0">تضمین کیفیت</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/money.jpg" alt="قیمت ارزان">
+                        <p class="m-0">قیمت ارزان</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/real.png" alt="امکان خرید حضوری">
+                        <p class="m-0">امکان خرید حضوری</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/return.webp" alt="امکان مرجوعی تا 7 روز">
+                        <p class="m-0">7 روز مرجوعی</p>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-4">
+                        <img src="../image/off.jpg" alt="تخفیف مناسبتی">
+                        <p class="m-0">تخفیف مناسبتی</p>
+                    </div>
+                </div>
+            </div>
+            <!-- دکمه یرگشت به بالا -->
+            <button id="scrollBtn" title="برو به بالا" class="btn btn-warning rounded-circle shadow pt-2">
+                <i class="fa fa-angle-double-up fa-lg"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer class="bg-warning text-dark text-center">
+        <div class="container bg-warning mb-0">
+            <div class="row text-center align-items-center">
+                <!-- نمادها -->
+                <div class="col mt-3 image">
+                    <img src="../image/rezi.svg" alt="اعتماد">
+                    <img src="../image/enamad.svg" alt="اعتماد">
+                </div>
+                <!-- Social Media Links -->
+                <div class="col mt-3">
+                    <h6 class="mb-3">دنبال کردن ما</h6>
+                    <a href="#" class="m-0">
+                        <img src="../image/telegram.png" alt="">
+                    </a>
+                    <a href="#" class="m-0">
+                        <img src="../image/instagram.png" alt="">
+                    </a>
+                    <a href="#" class="m-0">
+                        <img src="../image/eitta.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mb-3" />
+
+            <!-- Copyright -->
+            <div class="row align-items-center">
+                <p class="text-center">
+                    کلیه حقوق مادی و معنوی این سایت متعلق به فروشگاه عسلدون می‌باشد.
+                    <i class="fa fa-copyright"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="../home_page/home.js"></script>
+    <script src="product.js"></script>
+</body>
+
+</html>

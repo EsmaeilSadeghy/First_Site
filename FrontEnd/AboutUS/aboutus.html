@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما - عسلدون</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header fixed-top">
+        <!-- منو -->
+        <div class="navbar bg-warning p-1 mx-auto">
+            <div class="menu-container">
+                <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu">
+                    <i class="fa fa-bars-staggered"></i>
+                </button>
+                <h3><a href="home.html" class="text-dark">عسلدون</a></h3>
+            </div>
+
+            <a href="home.html"><img src="../image/asl.png" alt="عسلدون" title="عسلدون"></a>
+
+            <div class="header-container">
+                <a href="#" id="searchIcon" title="جستجو"><i class="fa fa-search text-dark"></i></a>
+                <a href="#" id="login_or_user??*****"><i class="fa fa-user-alt text-dark" title="صفحه کاربر"></i></a>
+                <a href="#"><i class="fa fa-cart-shopping text-dark" title="سبد خرید"></i></a>
+            </div>
+        </div>
+        <!-- منو کشویی -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="بستن"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html"><i class="fa fa-home"></i>صفحه اصلی</a>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item">
+                        <!-- لینک محصولات با آیکون تغییرپذیر -->
+                        <a class="nav-link products-toggle" data-bs-toggle="collapse" href="#productSubMenu"
+                            aria-expanded="false" aria-controls="productSubMenu">
+                            <i class="fa fa-file"></i> محصولات
+                            <i class="fa fa-angle-left mx-2 toggle-icon"></i>
+                        </a>
+                        <ul class="collapse list-unstyled mx-2 p-0" id="productSubMenu">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>عسل</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>گرده‌گل</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>بره‌موم</a></li>
+                            <hr class="my-0 mx-2">
+                            <li><a class="nav-link" href="#"><i class="fa fa-droplet mx-2"></i>ژله‌رویال</a></li>
+                            <hr class="my-0 mx-2">
+                        </ul>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-note-sticky"></i>خواندنی‌های
+                            آموزشی</a></li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info-circle"></i>درباره ما</a>
+                    </li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-phone"></i>تماس با ما</a></li>
+                    <hr class="m-1">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-pen"></i>قوانین و راهنمای سایت</a>
+                    </li>
+                    <hr class="m-1">
+                </ul>
+            </div>
+        </div>
+        <!-- سرچ باکس -->
+        <form class="form-inline my-2" id="searchForm">
+            <!-- <span class="close-search" id="closeSearch">&times;</span> -->
+            <input class="form-control border-0 focus-ring focus-ring-warning" type="search" placeholder="جستجو..."
+                aria-label="جستجو">
+        </form>
+    </header>
+
+    <main>
+        <!-- بنر بالای صفحه -->
+        <div class="about-banner text-center pt-5">
+            <img src="https://cdn-icons-png.flaticon.com/256/3413/3413307.png" alt="" class="my-4">
+            <h1>درباره عسلدون</h1>
+        </div>
+
+        <!-- محتوای اصلی -->
+        <div class="container my-5">
+            <!-- معرفی -->
+            <section class="text-center mb-5">
+                <h2 class="mb-4">معرفی ما</h2>
+                <p class="lead">
+                    عسلدون، فروشگاهی آنلاین با هدف ارائه بهترین و طبیعی‌ترین محصولات زنبورداری، از جمله انواع عسل‌های
+                    طبیعی،
+                    گرده گل و محصولات مرتبط است. هدف ما رساندن محصولات کاملاً ارگانیک از دل طبیعت به دست شماست.
+                </p>
+            </section>
+
+            <!-- ویژگی‌ها -->
+            <section class="row text-center mb-5">
+                <div class="col-md-4">
+                    <div>
+                        <i class="bi bi-flower3 feature-icon"></i>
+                        <h5 class="mt-3">100٪ طبیعی</h5>
+                        <p>تمام محصولات ما از زنبورستان‌های معتبر و بدون افزودنی تهیه می‌شوند.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <i class="bi bi-emoji-smile feature-icon"></i>
+                        <h5 class="mt-3">رضایت مشتری</h5>
+                        <p>هدف ما، ایجاد لبخند رضایت شما از خرید و کیفیت محصولات است.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <i class="bi bi-truck feature-icon"></i>
+                        <h5 class="mt-3">ارسال سریع</h5>
+                        <p>سفارش‌های شما را در کوتاه‌ترین زمان ممکن به دستتان می‌رسانیم.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- اعضای تیم -->
+            <section>
+                <h2 class="text-center mb-5">تیم ما</h2>
+                <div class="row text-center">
+                    <div class="col-md-4 team-member">
+                        <img src="https://via.placeholder.com/150" alt="عضو تیم">
+                        <h5 class="mt-3">علی زنبوردار</h5>
+                        <p class="text-muted">مدیر تولید عسل</p>
+                    </div>
+                    <div class="col-md-4 team-member">
+                        <img src="https://via.placeholder.com/150" alt="عضو تیم">
+                        <h5 class="mt-3">زهرا رضایی</h5>
+                        <p class="text-muted">مدیر فروش و بازاریابی</p>
+                    </div>
+                    <div class="col-md-4 team-member">
+                        <img src="https://via.placeholder.com/150" alt="عضو تیم">
+                        <h5 class="mt-3">محمد حسینی</h5>
+                        <p class="text-muted">توسعه‌دهنده وب</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- مزایای سایت -->
+        <div class="benefit bg-secondary-subtle my-5 mx-auto py-1 px-1" id="benefit">
+            <div class="row my-4 g-0">
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/send.png" alt="ارسال رایگان">
+                    <p class="m-0">ارسال رایگان</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/quality.png" alt="تضمین کیفیت">
+                    <p class="m-0">تضمین کیفیت</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/money.jpg" alt="قیمت ارزان">
+                    <p class="m-0">قیمت ارزان</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/real.png" alt="امکان خرید حضوری">
+                    <p class="m-0">امکان خرید حضوری</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/return.webp" alt="امکان مرجوعی تا 7 روز">
+                    <p class="m-0">7 روز مرجوعی</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-4">
+                    <img src="../image/off.jpg" alt="تخفیف مناسبتی">
+                    <p class="m-0">تخفیف مناسبتی</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- دکمه یرگشت به بالا -->
+        <button id="scrollBtn" title="برو به بالا" class="btn btn-warning rounded-circle shadow pt-2">
+            <i class="fa fa-angle-double-up fa-lg"></i>
+        </button>
+
+    </main>
+
+    <footer class="bg-warning text-dark text-center">
+        <div class="container bg-warning mb-0">
+            <div class="row text-center align-items-center">
+                <!-- نمادها -->
+                <div class="col mt-3 image">
+                    <img src="../image/rezi.svg" alt="اعتماد">
+                    <img src="../image/enamad.svg" alt="اعتماد">
+                </div>
+                <!-- Social Media Links -->
+                <div class="col mt-3">
+                    <h6 class="mb-3">دنبال کردن ما</h6>
+                    <a href="#" class="m-0">
+                        <img src="../image/telegram.png" alt="">
+                    </a>
+                    <a href="#" class="m-0">
+                        <img src="../image/instagram.png" alt="">
+                    </a>
+                    <a href="#" class="m-0">
+                        <img src="../image/eitta.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <hr class="mb-3" />
+
+            <!-- Copyright -->
+            <div class="row align-items-center">
+                <p class="text-center">
+                    کلیه حقوق مادی و معنوی این سایت متعلق به فروشگاه عسلدون می‌باشد.
+                    <i class="fa fa-copyright"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    <script src="../home_page/home.js"></script>
+</body>
+
+</html>
